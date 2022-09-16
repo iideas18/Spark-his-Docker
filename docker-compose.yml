@@ -1,0 +1,17 @@
+version: "3"
+services: 
+  spark-master:
+    image: sparkdocker:latest
+    ports: 
+        - 18089:18088
+    restart: always
+    volumes: 
+      - ./applicationHistory:/opt/spark/applicationHistory
+    entrypoint: ["spark-master"]
+  
+  
+  spark-slave:
+    image: sparkdocker:latest
+    restart: always
+    entrypoint:  ["spark-worker"]
+      

@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "C:/Users/zhouy1/cof-pack/cof-scl-isim-9.0.0_lic/pycof-win32/Lib/site-packages/"
+    ],
+    "python.terminal.executeInFileDir": true
+}
