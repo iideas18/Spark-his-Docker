@@ -29,4 +29,9 @@ ADD spark-defaults.conf /opt/spark/conf/spark-defaults.conf
 ADD spark-env.sh /opt/spark/conf/spark-env.sh
 RUN mkdir /opt/spark/applicationHistory
 
+#For Windows
+RUN sed -i -e 's/\r$//' /opt/spark/bin/spark-master
+RUN sed -i -e 's/\r$//' /opt/spark/bin/spark-worker
+RUN sed -i -e 's/\r$//' /opt/spark/conf/spark-defaults.conf
+RUN sed -i -e 's/\r$//' /opt/spark/conf/spark-env.sh
 

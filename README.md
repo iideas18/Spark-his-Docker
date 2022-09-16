@@ -9,9 +9,3 @@ Or build your own.
 ```bash
 docker build --pull --rm -f "Dockerfile" -t sparkdocker:latest "."
 ```
-
-
-
-## Know Issues
-
-Windows Docker need **dos2unix**
